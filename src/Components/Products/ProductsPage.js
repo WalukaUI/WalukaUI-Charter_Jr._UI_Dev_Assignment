@@ -1,17 +1,14 @@
 import "./ProductsPage.css"
-function Products({products}) {
-    function showProducts(products) {
-        return products.map((item)=> <div id={item.id} className="itemBox">
-            <p>{item.title}</p>
-            <p>{item.price}</p>
-            <p>{item.discription}</p>
-            <p>{item.category}</p>
-            <button>Add to cart</button>
-        </div>)
+import Product from "./Product"
+
+function Products({products, addToCart}) {
+    function addItemToCart(e) {
+        e.preventDefault()
+        addToCart(e)
     }
     return <div className="products">
         <h3> List of products</h3>
-        {showProducts(products)}
+        {products.map((item)=> <Product key={item.id} item={item} addItemToCart={addItemToCart}/>)}
     </div>
 }
 

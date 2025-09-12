@@ -4,22 +4,21 @@ import Products from "./Products/ProductsPage";
 import Cart from "./Cart/Cart";
 
 function Main() {
-
   const [pointsBalance, setPointsBalance] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-        fetch('https://dummyjson.com/products',{
-            method: "GET",
-            headers: { "Content-Type": "application/json"},
-        }).then((res)=>{
-            if(res.ok){
-                res.json().then((items)=>{
-                    setProducts(items.products)
-                })
-            }
-        })
+    fetch("https://dummyjson.com/products", {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    }).then((res) => {
+      if (res.ok) {
+        res.json().then((items) => {
+          setProducts(items.products);
+        });
+      }
+    });
   }, []);
 
   function addItemToCart(e) {
@@ -51,16 +50,20 @@ function Main() {
   return (
     <div className="main">
       <div>
-        <h3>Points Balance</h3>
-        <p>{pointsBalance.toFixed(2)}</p>
+        <Products products={products} addItemToCart={addItemToCart} />
       </div>
       <div>
-        <Cart
-          totalPrice={totalPrice}
-          removeItems={removeItems}
-          purchaseItems={purchaseItems}
-        />
-        <Products products={products} addItemToCart={addItemToCart} />
+        <div>
+          <h3>Points Balance</h3>
+          <p>{pointsBalance.toFixed(2)}</p>
+        </div>
+        <div>
+          <Cart
+            totalPrice={totalPrice}
+            removeItems={removeItems}
+            purchaseItems={purchaseItems}
+          />
+        </div>
       </div>
     </div>
   );

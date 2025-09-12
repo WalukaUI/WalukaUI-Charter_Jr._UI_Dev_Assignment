@@ -1,14 +1,19 @@
-function Cart({totalPrice, removeItems, purchaseItems}) {
-
-    return <>
-        <div>
+function Cart({ totalPrice, removeItems, purchaseItems }) {
+  return (
+    <>
+      <div>
+        <h4>Cart Total</h4>
         <h3>{totalPrice.toFixed(2)}</h3>
-        <a>click Remove Button to remove items from the cart</a><br/>
-        <button onClick={removeItems}>Remove</button><br/>
-        <a>click Purchase Button to purchase the items in the cart</a><br/>
+        <p>click Remove Button to remove items from the cart</p>
+        <br />
+        <button onClick={removeItems}>Remove</button>
+        <br />
+        <p>click Purchase Button to purchase the items in the cart</p>
+        <br />
         <button onClick={purchaseItems}>Purchase</button>
-    </div>
+      </div>
     </>
+  );
 }
 
-export default Cart
+export default Cart;

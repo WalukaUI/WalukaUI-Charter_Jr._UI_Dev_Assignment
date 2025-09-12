@@ -5,7 +5,9 @@
   flex-direction: row;
   justify-content:space-evenly;
 }
-
+.productsList{
+  width: 75%;
+}
 .pointsAndCart{
   position: sticky;
   top: 0;
@@ -16,6 +18,7 @@
   background-color: rgb(250, 239, 195);
   opacity: 0.8;
   text-align: center;
+  width: 25%;
 }
 
 button{
@@ -34,4 +37,10 @@ button:hover {
   background: #315cfd;
   color: white;
   font-size: 1.5em;
+}
+
+.pointsDiv{
+  padding: 50px;
+  border: 3px solid #ced661;
+  margin: 5px;
 }

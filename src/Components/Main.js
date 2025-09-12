@@ -50,14 +50,15 @@ function Main() {
   return (
     <div className="main">
       <div className="productsList">
+      <h3> List of products</h3>
         <Products products={products} addItemToCart={addItemToCart} />
       </div>
       <div className="pointsAndCart">
-        <div>
+        <div className="pointsDiv">
           <h3>Points Balance</h3>
           <p>{pointsBalance.toFixed(2)}</p>
         </div>
-        <div>
+        <div className="cartDiv">
           <Cart
             totalPrice={totalPrice}
             removeItems={removeItems}

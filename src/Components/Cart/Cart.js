@@ -1,7 +1,7 @@
-function Cart(totalPrice) {
+function Cart({totalPrice}) {
     return <>
         <div>
-        <h3>0000</h3>
+        <h3>{totalPrice.toFixed(2)}</h3>
     </div>
     </>
 }

@@ -5,7 +5,7 @@ function Product({item, addItemToCart}) {
         addItemToCart(item.price)
     }
     return<>
-        <div key={item.id} className="itemBox">
+        <div key={item.id} className="productDiv button">
             <p>{item.title}</p>
             <p>{item.price}</p>
             <p>{item.discription}</p>

@@ -1,3 +1,4 @@
+import "./Cart.css"
 function Cart({ totalPrice, removeItems, purchaseItems }) {
   return (
     <>
@@ -6,11 +7,11 @@ function Cart({ totalPrice, removeItems, purchaseItems }) {
         <h3>{totalPrice.toFixed(2)}</h3>
         <p>click Remove Button to remove items from the cart</p>
         <br />
-        <button onClick={removeItems}>Remove</button>
+        <button className="removebtn" onClick={removeItems}>Remove</button>
         <br />
         <p>click Purchase Button to purchase the items in the cart</p>
         <br />
-        <button onClick={purchaseItems}>Purchase</button>
+        <button className="purchasebtn" onClick={purchaseItems}>Purchase</button>
       </div>
     </>
   );

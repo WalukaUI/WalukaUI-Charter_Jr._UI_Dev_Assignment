@@ -40,13 +40,18 @@ let obj = [{id: 10, title: 'Gucci Bloom Eau de', description: "Gucci Bloom by Gu
     function addItemToCart(e) {
         setTotalPrice(count => count + e)
     }
+
+    function removeitems(){
+        setTotalPrice(0)
+    }
+
     return <div className="main">
         <div>
         <h3>Points Balance</h3>
         <p>{pointsBalance}</p>
         </div>
         <div>
-        <Cart totalPrice={totalPrice}/>
+        <Cart totalPrice={totalPrice} removeitems={removeitems}/>
         <Products products={products} addItemToCart={addItemToCart}/>
         </div>
     </div>

@@ -49,10 +49,10 @@ function Main() {
 
   return (
     <div className="main">
-      <div>
+      <div className="productsList">
         <Products products={products} addItemToCart={addItemToCart} />
       </div>
-      <div>
+      <div className="pointsAndCart">
         <div>
           <h3>Points Balance</h3>
           <p>{pointsBalance.toFixed(2)}</p>

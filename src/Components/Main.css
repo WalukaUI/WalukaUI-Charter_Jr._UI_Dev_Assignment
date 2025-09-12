@@ -3,5 +3,17 @@
   margin: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
+}
+
+.pointsAndCart{
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  min-height: 500px;
+  max-height: calc(100vh);
+  background-color: rgb(250, 239, 195);
+  opacity: 0.8;
+  text-align: center;
 }

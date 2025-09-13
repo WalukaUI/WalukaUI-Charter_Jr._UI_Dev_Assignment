@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Main.css";
 import Products from "./Products/ProductsPage";
 import Cart from "./Cart/Cart";
+import Question from "./Question/Question";
 
 function Main() {
   const [pointsBalance, setPointsBalance] = useState(0);
@@ -49,32 +50,11 @@ function Main() {
 
   return (
     <div className="main">
-      
       <div className="productsList">
-
-       <div className="button-container">
-      <button className="my-button">Question</button>
-      <div className="hover-box">
-      <p>
-                Jr UI Developer Assignment
-A retailer offers a rewards program to its customers, awarding points based on each recorded purchase.
-A customer receives 2 points for every dollar spent over $100 in each transaction, plus 1 point for every dollar spent between $50 and $100 in each transaction.<br/>
-<br/>
-(e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points).<br/>
-Given a record of every transaction during a three month period, calculate the reward points earned for each customer per month and total.<br/>
-<br/>
-Use React JS (do not use TypeScript)<br/><br/>
-
-Simulate an asynchronous API call to fetch data<br/><br/>
-
-No redux<br/><br/>
-
-Make up a data set to best demonstrate your solution<br/><br/>
-
-Check solution into GitHub<br/><br/>
-      </p>
-      </div>
-    </div>
+        <div className="button-container">
+          <button className="my-button">Question</button>
+          <Question />
+        </div>
         <hr />
         <h3 className="listH1"> List of products</h3>
         <hr />
@@ -83,7 +63,9 @@ Check solution into GitHub<br/><br/>
       <div className="pointsAndCart">
         <div className="pointsDiv">
           <h2>Points Balance</h2>
-          <b><p style={{color: "#FF0066"}}>{pointsBalance.toFixed(2)}</p></b>
+          <b>
+            <h2 style={{ color: "#FF0066" }}>{pointsBalance.toFixed(2)}</h2>
+          </b>
         </div>
         <div className="cartDiv">
           <Cart

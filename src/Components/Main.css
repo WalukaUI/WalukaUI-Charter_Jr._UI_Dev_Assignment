@@ -3,15 +3,17 @@
   margin: 30px;
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   background-color: oklch(86.832% 0.06089 110.722);
 }
-.productsList{
+
+.productsList {
   width: 75%;
   background-color: rgb(199, 198, 160);
   padding: 25px;
 }
-.pointsAndCart{
+
+.pointsAndCart {
   position: sticky;
   top: 0;
   left: 0;
@@ -24,7 +26,7 @@
   width: 25%;
 }
 
-.butn{
+.butn {
   width: 150px;
   height: 60px;
   border: 3px solid #315cfd;
@@ -42,21 +44,19 @@
   font-size: 1.5em;
 }
 
-.pointsDiv{
+.pointsDiv {
   padding: 50px;
   border: 3px solid #ced661;
   margin: 5px;
   border-radius: 15px;
 }
-.listH1{
+
+.listH1 {
   padding: 5px;
   color: #051346;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size:xx-large
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: xx-large;
 }
-
-
-
 
 .button-container {
   position: fixed;
@@ -84,9 +84,9 @@
   border: 1px solid #dee2e6;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: none; 
-  z-index: 10; 
-  min-width: 150px; 
+  display: none;
+  z-index: 10;
+  min-width: 150px;
 }
 
 .button-container:hover .hover-box {

@@ -12,7 +12,7 @@ function Product({ item, addItemToCart }) {
         </label>
         <b><p>{`Price: ${item.price}`}</p></b>
         <p>{`Category: ${item.category}`}</p>
-        <button onClick={handleclick}>Add to cart</button>
+        <button className="butn" onClick={handleclick}>Add to cart</button>
       </div>
     </>
   );

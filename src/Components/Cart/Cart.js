@@ -8,12 +8,12 @@ function Cart({ totalPrice, removeItems, purchaseItems }) {
         <hr/>
         <p>Click Remove Button to remove items from the cart</p>
         <br />
-        <button className="removebtn" onClick={removeItems}>Remove</button>
+        <button className="butn removebtn" onClick={removeItems}>Remove</button>
         <br />
         <hr/>
         <p>Click Purchase Button to purchase the items in the cart</p>
         <br />
-        <button className="purchasebtn" onClick={purchaseItems}>Purchase</button>
+        <button className="butn purchasebtn" onClick={purchaseItems}>Purchase</button>
       </div>
     </>
   );

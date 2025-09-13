@@ -24,7 +24,7 @@
   width: 25%;
 }
 
-button{
+.butn{
   width: 150px;
   height: 60px;
   border: 3px solid #315cfd;
@@ -36,7 +36,7 @@ button{
   font-weight: 550;
 }
 
-button:hover {
+.butn:hover {
   background: #315cfd;
   color: white;
   font-size: 1.5em;
@@ -53,4 +53,42 @@ button:hover {
   color: #051346;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size:xx-large
+}
+
+
+
+
+.button-container {
+  position: fixed;
+  top: 2px;
+  left: 5px;
+  z-index: 100;
+}
+
+.my-button {
+  background-color: #0e7adf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+}
+
+.hover-box {
+  text-align: left;
+  width: 500px;
+  padding: 10px;
+  position: absolute;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none; 
+  z-index: 10; 
+  min-width: 150px; 
+}
+
+.button-container:hover .hover-box {
+  display: block;
 }

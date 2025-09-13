@@ -1,17 +1,20 @@
-import "./Product.css"
+import "./Product.css";
 
-function Product({item, addItemToCart}) {
-    function handleclick() {
-        addItemToCart(item.price)
-    }
-    return<>
-        <div key={item.id} className="productDiv button">
-            <p>{item.title}</p>
-            <p>{item.price}</p>
-            <p>{item.discription}</p>
-            <p>{item.category}</p>
-            <button onClick={handleclick}>Add to cart</button>
-        </div>
+function Product({ item, addItemToCart }) {
+  function handleclick() {
+    addItemToCart(item.price);
+  }
+  return (
+    <>
+      <div key={item.id} className="productDiv button">
+        <label>
+          Name<p>{item.title}</p>
+        </label>
+        <b><p>{`Price: ${item.price}`}</p></b>
+        <p>{`Category: ${item.category}`}</p>
+        <button onClick={handleclick}>Add to cart</button>
+      </div>
     </>
+  );
 }
-export default Product
+export default Product;

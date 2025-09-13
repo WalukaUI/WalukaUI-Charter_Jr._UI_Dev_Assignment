@@ -4,9 +4,12 @@
   display: flex;
   flex-direction: row;
   justify-content:space-evenly;
+  background-color: oklch(86.832% 0.06089 110.722);
 }
 .productsList{
   width: 75%;
+  background-color: rgb(199, 198, 160);
+  padding: 25px;
 }
 .pointsAndCart{
   position: sticky;
@@ -15,7 +18,7 @@
   padding: 30px;
   min-height: 500px;
   max-height: calc(100vh);
-  background-color: rgb(250, 239, 195);
+  background-color: rgb(147, 167, 147);
   opacity: 0.8;
   text-align: center;
   width: 25%;
@@ -43,4 +46,11 @@ button:hover {
   padding: 50px;
   border: 3px solid #ced661;
   margin: 5px;
+  border-radius: 15px;
+}
+.listH1{
+  padding: 5px;
+  color: #051346;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:xx-large
 }

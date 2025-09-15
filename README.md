@@ -1,3 +1,8 @@
+- ⚡⚡⚡ Please visit below link to check the frontend of the website ⚡⚡⚡
+
+-  https://chartertech.netlify.app/
+
+####
 
 Jr UI Developer Assignment
 A retailer offers a rewards program to its customers, awarding points based on each recorded purchase.
